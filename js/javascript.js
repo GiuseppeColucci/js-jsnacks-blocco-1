@@ -18,12 +18,31 @@ else{
     console.log('i valori sono identici');
     alert('i valori sono identici.. cioè ' + valore1);
 }
+/*
+esercizio 2:L’utente inserisce due parole in successione, con due prompt.
+Il software stampa una stringa contenente prima la parola più corta, uno spazio e poi la parola più lunga.
+*/ 
 
+var parola1 =(prompt('inserire la prima parola'));
+var parola2 =(prompt('inserire la seconda parola'));
 
-
-
-
-
+if(parola1.length>parola2.length){
+    console.log(parola1);
+    alert(parola1);
+}
+else if(parola1.length<parola2.length){
+    console.log(parola2);
+    alert(parola2);
+}
+else{
+    console.log('le parole sono lunghe in maniera identica ..'+parola2);
+    alert('le parole sono lunghe in maniera identica .. '+parola2);
+}
+/*
+esercizio 3.Il software deve chiedere per 5 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti.
+Esegui questo programma con il for.
+*/ 
 
 
 
