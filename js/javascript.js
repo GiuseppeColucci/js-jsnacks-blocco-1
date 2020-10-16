@@ -44,7 +44,15 @@ Il programma stampa la somma di tutti i numeri inseriti.
 Esegui questo programma con il for.
 */ 
 
+var somma=0;
 
+for (var i = 0 ; i <=4; i++){
+    var number =parseInt( prompt('inserisci un numero'));
+    somma=somma+number;
+}
+
+console.log(somma);
+    alert(somma);
 
 
 
