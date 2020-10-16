@@ -77,5 +77,19 @@ else{
     console.log('mi dispiace ma il tuo nome non risulta nella lista della festa!!');
     alert('mi dispiace ma il tuo nome non risulta nella lista della festa!!');
 }
-   
+/*
+esercizzio 5:Crea un array vuoto.
+ Chiedi per 6 volte all’utente di inserire un numero
+ Se è dispari inseriscilo nell’array
+*/
+var contenitore=[];
 
+for(var i=0; i<6; i++){
+    var numero=parseInt(prompt('inserire un numero'));
+    if(numero % 2 !=0){
+        contenitore.push(numero);
+    }
+}
+
+console.log(contenitore);
+    alert(contenitore);
