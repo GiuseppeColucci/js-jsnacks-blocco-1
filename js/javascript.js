@@ -26,11 +26,11 @@ Il software stampa una stringa contenente prima la parola più corta, uno spazio
 var parola1 =(prompt('inserire la prima parola'));
 var parola2 =(prompt('inserire la seconda parola'));
 
-if(parola1.length>parola2.length){
+if(parola1.length > parola2.length){
     console.log(parola1);
     alert(parola1);
 }
-else if(parola1.length<parola2.length){
+else if(parola1.length < parola2.length){
     console.log(parola2);
     alert(parola2);
 }
@@ -54,5 +54,28 @@ for (var i = 0 ; i <=4; i++){
 console.log(somma);
     alert(somma);
 
+/*
+esercizzio 4: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby (Paolo, Fabio, Lorenzo)
+ Chiedi all’utente il suo nome
+ Comunicagli se può partecipare o no alla festa.
+*/ 
+var festa=['paolo', 'Fabio', 'Lorenzo'];
+var invito=prompt('quale è il tuo nome per entrare alla festa ?');
 
+var imbucato=false
+
+for(var i= 0; i<festa.length; i++){
+    if(invito==festa[i]){
+        imbucato=true
+    }
+}
+if(imbucato==true){
+    console.log('puoi entrare alla festa');
+    alert('puoi entrare alla festa');
+}
+else{
+    console.log('mi dispiace ma il tuo nome non risulta nella lista della festa!!');
+    alert('mi dispiace ma il tuo nome non risulta nella lista della festa!!');
+}
+   
 
